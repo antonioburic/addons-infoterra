@@ -1,2 +1,2 @@
 # addons-infoterra
-Odoo modules develoeped by InfoTerra
+Odoo modules developed by InfoTerra
