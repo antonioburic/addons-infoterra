@@ -1,11 +1,15 @@
 odoo.define("web_disable_export_delete_button", function(require) {
 "use strict";
 
-    var core = require("web.core");
-    var Sidebar = require('web.Sidebar');
-    var ListController = require("web.ListController");
-    var _t = core._t;
-    var session = require("web.session");
+	var core = require('web.core');
+	var BasicController = require('web.BasicController');
+	var DataExport = require('web.DataExport');
+	var pyeval = require('web.pyeval');
+	var Sidebar = require('web.Sidebar');
+
+	var _t = core._t;
+	var qweb = core.qweb;
+    	var session = require("web.session");
 
     ListController.include({
         
