@@ -69,7 +69,7 @@ odoo.define("web_disable_export_delete_button", function(require) {
 							callback: this._onDeleteSelectedRecords.bind(this)
 						});
 					}
-					
+                }
 				this.sidebar = new Sidebar(this, {
 					editable: this.is_action_enabled('edit'),
 					env: {
@@ -79,13 +79,10 @@ odoo.define("web_disable_export_delete_button", function(require) {
 					},
 					actions: _.extend(this.toolbarActions, {other: other}),
 				});
-				}
-				this.sidebar.appendTo($node);
 
+				this.sidebar.appendTo($node);
 				this._toggleSidebar();
-            		
-            	
-                
+
             }
         }
     });
